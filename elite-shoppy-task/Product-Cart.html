@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 300px;
+            width: 250px;
+            background: transparent;
+            margin: 50px 20px;
+            position: relative;
+        }
+        .main span{
+            background: #fc636b;
+            color: #fff;
+            top: 0;
+            right: 0;
+            position: absolute;
+            padding: 5px 10px;
+            z-index: 1;
+        }
+        .main .img{
+            height: 200px;
+            width: 250px;
+            position: relative;
+        }
+        img{
+            margin: 20px;
+            height: 150px;
+            width: 200px;
+        }
+        .img .img-info{
+            position: absolute;
+        }
+        .img-info .front-img,.back-img{
+            margin: 20px auto;
+            position: absolute;
+            transition: 1s;
+            top: 0;
+            left: 0;
+			backface-visibility: hidden;
+
+        }
+        .img-info .front-img{
+            transform: rotateY(180deg);
+        }
+        .img-info .back-img{
+            transform: rotateY(0deg);
+        }
+        .img .view{
+            height: 35px;
+            width: 250px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            line-height: 35px;
+            letter-spacing: 2px;
+            font-size: 20px;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            transition: 1s;
+        }
+        .view:hover{
+            background: #2fdab8;
+        }
+        .img:hover .view{
+            top: 80%;
+            opacity: 1;
+        }
+        .img:hover .front-img{
+            transform:  rotateY(0deg);
+        }
+        .img:hover .back-img{
+            transform:  rotateY(180deg);
+        }
+        .product{
+            display: flex;
+        }
+        .info{
+            height: 100px;
+            width: auto;
+            text-align: center;
+        }
+        .info h3
+        {
+            color: #fc636b;
+        }
+        .price{
+            padding: 10px 20px;
+            margin: 5px 10px;
+        }
+        .info button{
+            padding: 10px;
+            background: #2fdab8;
+            color: #fff;
+            border: none;
+            transition: 0.4s;
+        }
+        button:hover{
+            outline: 3px solid #2fdab8;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Product Cart Start -->
+    <div class="product">
+        <div class="main">
+            <span>New</span>
+            <div class="img">
+                <div class="img-info">
+                    <div class="front-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg " alt="">
+                    </div>
+                    <div class="back-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg " alt="">
+                    </div>
+                </div>
+                <div class="view">Quick View</div>
+            </div>
+            <div class="info">
+                <h3>Formal Blue Shirt</h3>
+                <p class="price">$45.99 <del>$69.71</del></p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        <div class="main">
+            <span>New</span>
+            <div class="img">
+                <div class="img-info">
+                    <div class="front-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg " alt="">
+                    </div>
+                    <div class="back-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg " alt="">
+                    </div>
+                </div>
+                <div class="view">Quick View</div>
+            </div>
+            <div class="info">
+                <h3>Formal Blue Shirt</h3>
+                <p class="price">$45.99 <del>$69.71</del></p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        <div class="main">
+            <span>New</span>
+            <div class="img">
+                <div class="img-info">
+                    <div class="front-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg " alt="">
+                    </div>
+                    <div class="back-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg " alt="">
+                    </div>
+                </div>
+                <div class="view">Quick View</div>
+            </div>
+            <div class="info">
+                <h3>Formal Blue Shirt</h3>
+                <p class="price">$45.99 <del>$69.71</del></p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        <div class="main">
+            <span>New</span>
+            <div class="img">
+                <div class="img-info">
+                    <div class="front-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg " alt="">
+                    </div>
+                    <div class="back-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg " alt="">
+                    </div>
+                </div>
+                <div class="view">Quick View</div>
+            </div>
+            <div class="info">
+                <h3>Formal Blue Shirt</h3>
+                <p class="price">$45.99 <del>$69.71</del></p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="main">
+            <span>New</span>
+            <div class="img">
+                <div class="img-info">
+                    <div class="front-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg " alt="">
+                    </div>
+                    <div class="back-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg " alt="">
+                    </div>
+                </div>
+                <div class="view">Quick View</div>
+            </div>
+            <div class="info">
+                <h3>Formal Blue Shirt</h3>
+                <p class="price">$45.99 <del>$69.71</del></p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        <div class="main">
+            <span>New</span>
+            <div class="img">
+                <div class="img-info">
+                    <div class="front-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg " alt="">
+                    </div>
+                    <div class="back-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg " alt="">
+                    </div>
+                </div>
+                <div class="view">Quick View</div>
+            </div>
+            <div class="info">
+                <h3>Formal Blue Shirt</h3>
+                <p class="price">$45.99 <del>$69.71</del></p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        <div class="main">
+            <span>New</span>
+            <div class="img">
+                <div class="img-info">
+                    <div class="front-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg " alt="">
+                    </div>
+                    <div class="back-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg " alt="">
+                    </div>
+                </div>
+                <div class="view">Quick View</div>
+            </div>
+            <div class="info">
+                <h3>Formal Blue Shirt</h3>
+                <p class="price">$45.99 <del>$69.71</del></p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        <div class="main">
+            <span>New</span>
+            <div class="img">
+                <div class="img-info">
+                    <div class="front-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg " alt="">
+                    </div>
+                    <div class="back-img">
+                        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m8.jpg " alt="">
+                    </div>
+                </div>
+                <div class="view">Quick View</div>
+            </div>
+            <div class="info">
+                <h3>Formal Blue Shirt</h3>
+                <p class="price">$45.99 <del>$69.71</del></p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
