@@ -1,0 +1,9 @@
+header{
+    border: 2px solid gray;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 20px;
+}
