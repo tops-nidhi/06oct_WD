@@ -1,0 +1,33 @@
+@media(min-width: 500px)
+{
+    ul li{
+        display: none;
+    }
+    h1{
+        display: block;
+    }
+    h1:hover{
+        background: aqua;
+    }
+}
+@media(min-width: 700px)
+{
+    h1{
+        display: none;
+    }
+    ul li{
+        display: block;
+        background: lightblue;
+    }
+}
+@media(min-width: 900px){
+    ul li{
+        display: inline;
+        margin: 10px;
+        padding: 30px;
+        background: lightcoral;
+    }
+    h1{
+        display: none;
+    }
+}
