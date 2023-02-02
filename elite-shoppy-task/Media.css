@@ -1,0 +1,42 @@
+@media (min-width: 500px)
+{
+    header ul li{
+        display: block;
+        width: 50%;
+    }
+    section{
+        height: auto;
+        /* display: block; */
+    }
+    .item{
+        height: 200px;
+
+    }
+
+}
+@media screen and (min-width: 900px){
+    header ul li{
+        padding: 30px;
+        margin: 30px;
+        display: inline;
+    }
+    section{
+        display: flex;
+    }
+    .item{
+        height: 200px;
+    }
+}
+@media screen and (min-width: 1000px){
+    header ul li{
+        padding: 50px;
+        margin: 50px;
+        display: inline;
+    }
+    section{
+        display: flex;
+    }
+    .item{
+        height: 200px;
+    }
+}
