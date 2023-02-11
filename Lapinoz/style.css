@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.header{
+    height: 70px;
+    width: 100%;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 3fr;
+    text-align: center;
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header ul li{
+    display: inline;
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    color: darkgreen;
+}
+
+.banner{
+    height: 500px;
+    background: transparent;
+    margin-top: 70px;
+    position: relative;
+    /* text-align: center; */
+    line-height: 500px;
+    justify-content: center;
+    align-content: center;
+}
+.banner h1, .banner-img{
+    position: absolute;
+}
+.banner h1{
+    font-size: 50px;
+    color: yellow;
+    margin-left: 200px;
+    text-shadow: 5px 5px 5px black;
+}
+.banner .banner-img{
+    filter: brightness(70%);
+}
+.deals-offer{
+    height: 150px;
+    background: green;
+}
