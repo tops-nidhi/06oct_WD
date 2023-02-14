@@ -1,4 +1,4 @@
-@media(min-width: 500px)
+@media(min-width: 500px) and (max-width: 650px)
 {
     ul li{
         display: none;
@@ -10,7 +10,7 @@
         background: aqua;
     }
 }
-@media(min-width: 700px)
+@media (min-width: 650px) and (max-width: 700px)
 {
     h1{
         display: none;
@@ -21,6 +21,9 @@
     }
 }
 @media(min-width: 900px){
+    header{
+        height: 50px;
+    }
     ul li{
         display: inline;
         margin: 10px;
