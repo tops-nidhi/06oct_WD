@@ -12,25 +12,26 @@
             background: #666;
             /* border: 3px ridge blue; */
             border-radius: 0;
-            /* top: 0; */
-            animation-name: rajnik;
-            animation-duration: 5s;
+            position: relative;
+            top: 0;
+            animation-name: animation;
+            animation-duration: 10s;
             animation-delay: 0.5s;
             animation-iteration-count: infinite;
             animation-direction: normal;
             
         }
+        @keyframes animation{
+            from{background: #666;border-radius: 0;top: 0px; left: 0%;}
+            to{background: coral; border-radius: 100%; top: 100; left: 50%;}
+        }
         /* @keyframes animation{
-            from{background: #666;border-radius: 0;top: 0px;}
-            to{background: coral; border-radius: 100%; top: 100px;}
-        } */
-        @keyframes rajnik{
             0%{color: red;background: url(http://clipart-library.com/clipart/emoji-clipart-3.htm);border-radius: 0%; margin: 0px; background-size: 100% 100%;}
             25%{color: blue;background: url(https://webstockreview.net/images/emoji-clipart-1.png);border-radius: 25%;  margin: 25px; background-size: 100% 100%;}
             50%{color: green;background: url(https://clipartstation.com/wp-content/uploads/2018/09/clipart-emoji.png);border-radius: 50%;  margin: 50px; background-size: 100% 100%;}
             75%{color: coral;background: url(http://getdrawings.com/cliparts/emoji-faces-clipart-32.png);border-radius: 75%;  margin: 75px; background-size: 100% 100%;}
             100%{color: lightcoral;background: url(https://img.clipartlook.com/emoji-clipart--2000.png);border-radius: 100%;  margin: 100px; background-size: 100% 100%;}
-        }
+        } */
     </style>
 </head>
 <body>
