@@ -14,8 +14,15 @@
 <body>
     <canvas height="300px" width="500px" id="can"></canvas>
     <script>
-        var canvas = document.getElementsById("can");
-        
+        var canvas = document.getElementById('can');
+        var context = canvas.getContext('2d');
+        console.log(context);
+        context.moveTo(0, 0);
+        context.lineTo(500, 300);
+        context.stroke();
+        context.rect(50, 50, 180, 180);
+        context.fillStyle = "seagreen";
+        context.fill();
     </script>
 </body>
 </html>
