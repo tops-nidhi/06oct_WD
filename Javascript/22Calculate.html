@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <style>
+        /* #ans{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="val1" value="">
+    <br><input type="text" name="" id="val2">
+    <!-- <br><input type="text" name="" id="ans"> -->
+    <p id="ans"></p>
+    <!-- <select name="" id="sel">
+        <option value="+">+</option>
+        <option value="-">-</option>
+    </select> -->
+    <button id="add" onclick="add()">Addition(+)</button>
+    <button id="sub" onclick="sub()">Subtraction(-)</button>
+    <button id="mul" onclick="mul()">Multiplication(*)</button>
+    <button id="div" onclick="div()">Division(/)</button>
+    <script>
+        var val_1 = document.getElementById('val1').value;
+        var val_2 = document.getElementById('val2').value;
+        var answer = document.getElementById('ans');
+        console.log (val_1);
+        console.log (val_2);
+        function add()
+        {
+            var ans = parseInt(val_1) + parseInt(val_2);
+            answer.innerHTML = ans;
+        }
+        function sub()
+        {
+            var ans = parseInt(val_1) - parseInt(val_2);
+            answer.innerHTML = ans;
+        }
+        function mul()
+        {
+            // var ans = parseInt(val_1) * parseInt(val_2);
+            var ans = val_1 * val_2;
+            answer.innerHTML = ans;
+        }
+        function div()
+        {
+            var ans = parseInt(val_1) / parseInt(val_2);
+            answer.innerHTML = ans;
+        }
+    </script>
+</body>
+</html>
